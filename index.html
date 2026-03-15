@@ -46,23 +46,24 @@
                 </div>
             </main>
         </div>
-        <div class="cover cover_hidden">
+        <div class="cover cover_hidden" id="add-habbit_popup">
             <div class="popup">
                 <h2>Новая привычка</h2>
                 <div class="icon-label">Иконка</div>
                 <div class="icon-select">
-                    <button class="icon icon_active">
+                    <button class="icon icon_active" onclick="setIcon(this, 'book')">
                         <img src="./images/book.svg" alt="">
                     </button>
-                    <button class="icon">
+                    <button class="icon" onclick="setIcon(this, 'beer')">
                         <img src="./images/beer.svg" alt="">
                     </button>
-                    <button class="icon">
+                    <button class="icon" onclick="setIcon(this, 'apple')">
                         <img src="./images/apple.svg" alt="">
                     </button>
                 </div>
-                <form class="popup__form">
+                    <form class="popup__form" onsubmit="addHabbit(event)">
                         <input type="text" name="name" placeholder="Название">
+                        <input type="text" name="icon" hidden value="book" placeholder="Иконка">
                         <input type="number" name="target" placeholder="Цель">
                         <button class="habbit__ready" type="submit">Добавить</button>
                     </form>
