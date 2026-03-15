@@ -162,6 +162,7 @@ h1 {
 }
 
 input {
+    font-size: 1rem;
     font-family: var(--primary-font);
     border: 0.015rem solid black;
     border-radius: 0.5rem;
@@ -288,4 +289,28 @@ input.error {
 
 .popup__form input {
     width: 100%;
+}
+
+@media screen and (max-width: 1030px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    html {
+        font-size: 60%;
+    }
 }

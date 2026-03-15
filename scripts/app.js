@@ -100,7 +100,8 @@ function renderHead(activeHabbit) {
 }
 
 function renderContent(activeHabbit) {
-    const input = document.querySelector('.input_icon').classList.remove('error');
+    document.querySelector('.habbit__form input').classList.remove('error');
+    document.querySelector('.habbit__form input').value = '';
 
     page.content.daysContainer.innerHTML = '';
     for (const index in activeHabbit.days) {
@@ -171,7 +172,6 @@ function setIcon(context, icon) {
     activeIcon.classList.remove('icon_active');
     context.classList.add('icon_active');
 }
-
 
 
 function addHabbit(event) {
